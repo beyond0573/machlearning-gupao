@@ -4,7 +4,10 @@ import matplotlib.pyplot as plt
 
 from linear_regression import LinearRegression
 
-data = pd.read_csv('../data/world-happiness-report-2017.csv')
+
+data = pd.read_csv('2-线性回归代码实现/linear-regression/data/world-happiness-report-2017.csv')
+
+
 
 # 得到训练和测试数据
 train_data = data.sample(frac = 0.8)

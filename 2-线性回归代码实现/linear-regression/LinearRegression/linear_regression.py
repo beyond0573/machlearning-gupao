@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/workspaces/machlearning-gupao/2-线性回归代码实现/linear-regression/')
 import numpy as np
 from utils.features import prepare_for_training
 

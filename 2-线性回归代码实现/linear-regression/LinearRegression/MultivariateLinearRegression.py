@@ -7,7 +7,7 @@ import plotly.graph_objs as go
 plotly.offline.init_notebook_mode()
 from linear_regression import LinearRegression
 
-data = pd.read_csv('../data/world-happiness-report-2017.csv')
+data = pd.read_csv('2-线性回归代码实现/linear-regression/data/world-happiness-report-2017.csv')
 
 train_data = data.sample(frac=0.8)
 test_data = data.drop(train_data.index)
@@ -72,7 +72,7 @@ plot_data = [plot_training_trace, plot_test_trace]
 
 plot_figure = go.Figure(data=plot_data, layout=plot_layout)
 
-plotly.offline.plot(plot_figure)
+plotly.offline.iplot(plot_figure)
 
 num_iterations = 500  
 learning_rate = 0.01  
